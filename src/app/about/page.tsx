@@ -1,6 +1,11 @@
 import React from "react";
 const About = () => {
-  return <div>about</div>;
+    return (
+      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        About
+      </main>
+    );
+    
 };
 
 export default About;
