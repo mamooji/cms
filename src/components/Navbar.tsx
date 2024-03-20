@@ -5,29 +5,21 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import React, { useState } from "react";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import { navData } from "@/lib/content/navItems";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader } from "@/components/ui/sheet";
 import { Button } from "./ui/button";
 import { Icons } from "./icons";
+import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const [sideBar, setSideBar] = useState(false);
 
   return (
-    <div className="flex w-full mx-auto justify-between m-4 ">
+    <div className="flex w-full mx-auto justify-between p-4  max-w-7xl ">
       <NavigationMenu>
         <NavigationMenuList className=" md:hidden">
           <Sheet open={sideBar} onOpenChange={setSideBar}>
@@ -39,20 +31,18 @@ const Navbar = () => {
               <Icons.hamburger />
             </Button>
             <SheetContent side={"left"}>
-              <SheetHeader></SheetHeader>
-              <NavigationMenuList className="flex flex-col">
+              <SheetHeader className="mb-4">Navigation Menu</SheetHeader>
+              <NavigationMenuList className="flex flex-col gap-4 ">
                 {navData.map((navItem, index) => {
                   return (
-                    <NavigationMenuItem key={index}>
-                      <Link
-                        href={navItem.url}
-                        legacyBehavior
-                        type="submit"
-                        passHref
-                      >
+                    <NavigationMenuItem key={index} className="w-full">
+                      <Link href={navItem.url} legacyBehavior passHref>
                         <NavigationMenuLink
                           onClick={() => setSideBar(false)}
-                          className={navigationMenuTriggerStyle()}
+                          className={cn(
+                            navigationMenuTriggerStyle(),
+                            "capitalize outline w-full "
+                          )}
                         >
                           {navItem.name}
                         </NavigationMenuLink>
@@ -69,7 +59,9 @@ const Navbar = () => {
             return (
               <NavigationMenuItem key={index}>
                 <Link href={navItem.url} legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  <NavigationMenuLink
+                    className={cn(navigationMenuTriggerStyle(), "capitalize")}
+                  >
                     {navItem.name}
                   </NavigationMenuLink>
                 </Link>
