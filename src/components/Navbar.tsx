@@ -19,7 +19,7 @@ const Navbar = () => {
   const [sideBar, setSideBar] = useState(false);
 
   return (
-    <div className="bg-green-600 dark:bg-green-950">
+    <div className="sticky top-0 shadow-lg bg-green-600 dark:bg-green-950">
       <div className="flex w-full mx-auto justify-between p-4  max-w-7xl ">
         <NavigationMenu>
           <NavigationMenuList className=" md:hidden ">
