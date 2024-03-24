@@ -59,7 +59,7 @@ const Home: React.FC = () => {
           <CarouselNext className="my-2 " />
         </Carousel>
       </div>
-      <div className="flex flex-col pb-20">
+      <div className="flex flex-col pb-10">
         <h2 className="mt-10 scroll-m-20 border-b pb-2 text-xl font-bold tracking-tight transition-colors first:mt-0">
           CMS runs on your generous Donations
         </h2>
