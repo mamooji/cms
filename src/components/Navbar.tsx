@@ -19,8 +19,11 @@ const Navbar = () => {
   const [sideBar, setSideBar] = useState(false);
 
   return (
-    <div className="sticky top-0 shadow-lg bg-green-600 dark:bg-green-950">
-      <div className="flex w-full mx-auto justify-between p-4  max-w-7xl ">
+    <div
+      className="sticky top-0 shadow-lg dark:shadow-primary z-10
+    "
+    >
+      <div className="flex w-full mx-auto justify-between p-4  max-w-7xl bg-background">
         <NavigationMenu>
           <NavigationMenuList className=" md:hidden ">
             <Sheet open={sideBar} onOpenChange={setSideBar}>
@@ -31,11 +34,13 @@ const Navbar = () => {
               >
                 <Icons.hamburger />
               </Button>
-              <SheetContent
-                side={"left"}
-                className="bg-green-600 dark:bg-green-950"
-              >
-                <SheetHeader className="mb-4">Navigation Menu</SheetHeader>
+              <SheetContent side={"left"} className=" overflow-scroll">
+                <SheetHeader
+                  className="mb-8
+                 font-extrabold text-xl tracking-wider "
+                >
+                  Navigation Menu
+                </SheetHeader>
                 <NavigationMenuList className="flex flex-col gap-4 ">
                   {navData.map((navItem, index) => {
                     return (
@@ -45,7 +50,7 @@ const Navbar = () => {
                             onClick={() => setSideBar(false)}
                             className={cn(
                               navigationMenuTriggerStyle(),
-                              "capitalize  w-full "
+                              "capitalize font-bold text-lg tracking-wide h-20 w-full "
                             )}
                           >
                             {navItem.name}
@@ -66,7 +71,7 @@ const Navbar = () => {
                     <NavigationMenuLink
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "capitalize bg-inherit text-white  "
+                        "capitalize "
                       )}
                     >
                       {navItem.name}
