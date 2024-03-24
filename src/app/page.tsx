@@ -67,8 +67,8 @@ const Home: React.FC = () => {
           Prophet ﷺ said:
         </p>
         <blockquote className="mt-6 border-l-2 pl-6 italic">
-          "Whosoever builds a Masjid for الله سبحانه وتعالى, الله سبحانه وتعالى
-          will build for him a house in paradise."
+          &quot;Whosoever builds a Masjid for الله سبحانه وتعالى, الله سبحانه
+          وتعالى will build for him a house in paradise.&quot;
         </blockquote>
         <Link
           className={cn(
