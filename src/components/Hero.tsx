@@ -10,14 +10,17 @@ import {
 
 const Hero = () => {
   return (
-    <div className=" flex flex-col md:flex-row md:justify-center md:items-center md:pt-16">
+    <div className=" flex flex-col md:flex-row md:justify-center md:items-center md:pt-16 pb-10 ">
       <div className="flex flex-col md:pl-6 pt-8 pb-16 md:py-0  md:w-1/2">
-        <h1 className="scroll-m-20 break-words text-5xl font-extrabold tracking-widest whitespace-pre-wrap max-w-md">
-          {"Cambridge\nMuslim\nSociety"}
+        <h1 className="scroll-m-20 break-words text-5xl lg:text-7xl font-extrabold tracking-widest whitespace-pre-wrap max-w-md">
+          Cambridge{"\n"}
+          <span className="text-primary">Muslim</span>
+          {"\n"}
+          Society
         </h1>
       </div>
 
-      <div className="flex flex-col pb-20 items-center md:py-0 md:w-1/2 md:items-center">
+      <div className="flex flex-col  items-center md:py-0 md:w-1/2 md:items-center">
         <Carousel className="flex flex-col max-w-md">
           <CarouselContent>
             <CarouselItem>
