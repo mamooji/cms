@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
                     <NavigationMenuLink
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "px-0 underline"
+                        "px-0 underline hover:bg-inherit hover:text-primary"
                       )}
                     >
                       {navItem.name}
