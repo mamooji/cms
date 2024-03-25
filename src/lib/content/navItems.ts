@@ -32,8 +32,32 @@ export const navData: Array<NavItem> = [
     name: "members",
     url: "/members",
   },
+];
+
+export const footerData: Array<NavItem> = [
+  {
+    name: "about us",
+    url: "/about",
+  },
+  {
+    name: "services",
+    url: "/services",
+  },
+  {
+    name: "events",
+    url: "/events",
+  },
+  {
+    name: "donate",
+    url: "/donate",
+  },
+  {
+    name: "members",
+    url: "/members",
+  },
   {
     name: "contact",
     url: "/contact",
   },
 ];
+
