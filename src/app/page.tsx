@@ -4,12 +4,14 @@ import React from "react";
 import MasjidForm from "@/components/MasjidForm";
 import Hero from "@/components/Hero";
 import Quote from "@/components/Quote";
+import Services from "@/components/Services";
 
 const Home: React.FC = () => {
   return (
     <div className="flex flex-col mx-8">
       <Hero />
       <Quote />
+      <Services />
       <MasjidForm />
 
       <div className="flex flex-col justify-center h-full">
