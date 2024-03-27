@@ -34,6 +34,32 @@ export const navData: Array<NavItem> = [
   },
 ];
 
+export const servicesData: Array<NavItem> = [
+  {
+    name: "hifz",
+    url: "/hifz",
+  },
+  {
+    name: "events",
+    url: "/events",
+  },
+  {
+    name: "prayer times",
+    url: "/prayer-times",
+  },
+  {
+    name: "donation",
+    url: "/donation",
+  },
+  {
+    name: "announcements",
+    url: "/announcements",
+  },
+  {
+    name: "more",
+    url: "/more",
+  },
+];
 export const footerData: Array<NavItem> = [
   {
     name: "about us",
