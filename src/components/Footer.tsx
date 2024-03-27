@@ -16,7 +16,7 @@ import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 const Footer: React.FC = () => {
   return (
     <div className="bottom-0 z-10 w-full border-t-2 ">
-      <div className="max-w-7xl flex flex-col px-8 pb-8">
+      <div className="max-w-7xl flex flex-col mx-auto px-8 pb-8">
         <Image
           src="/images/logo.png"
           width={150}
