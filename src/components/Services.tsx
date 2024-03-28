@@ -11,12 +11,13 @@ const Services = () => {
         Services
       </h2>
       <div className="pt-2 grid grid-rows-4 md:grid-rows-3 lg:grid-rows-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-10 gap-4 ">
-        {servicesData.map((service) => {
+        {servicesData.map((service, index) => {
           return (
             // <div className="rounded-lg text-center bg-secondary-50 justify-center items-center h-20">
             //   {service.name}
             // </div>
             <Link
+              key={index}
               href={service.url}
               className={cn(
                 buttonVariants({ variant: "secondary" }),
