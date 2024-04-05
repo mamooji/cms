@@ -3,6 +3,12 @@ interface NavItem {
   url: string;
   logo?: SVGAElement;
 }
+interface ImageItem {
+  title: string;
+  description: string;
+  src: string;
+  alt: string;
+}
 export const navData: Array<NavItem> = [
   {
     name: "home",
@@ -34,6 +40,26 @@ export const navData: Array<NavItem> = [
   },
 ];
 
+export const imageData: Array<ImageItem> = [
+  {
+    title: "CMS",
+    description: "CMS wow mashaAllah",
+    src: "/images/masjid.jpg",
+    alt: "picture of masjid",
+  },
+  {
+    title: "madina",
+    description: "madina wow",
+    src: "/images/madina.jpg",
+    alt: "picture of masjid",
+  },
+  {
+    title: "mecca",
+    description: "clock tower wow",
+    src: "/images/clockTower.jpg",
+    alt: "picture of masjid",
+  },
+];
 export const servicesData: Array<NavItem> = [
   {
     name: "hifz",
@@ -86,4 +112,3 @@ export const footerData: Array<NavItem> = [
     url: "/contact",
   },
 ];
-
