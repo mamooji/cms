@@ -3,12 +3,14 @@ interface NavItem {
   url: string;
   logo?: SVGAElement;
 }
+
 interface ImageItem {
   title: string;
   description: string;
   src: string;
   alt: string;
 }
+
 export const navData: Array<NavItem> = [
   {
     name: "home",
@@ -60,6 +62,7 @@ export const imageData: Array<ImageItem> = [
     alt: "picture of masjid",
   },
 ];
+
 export const servicesData: Array<NavItem> = [
   {
     name: "hifz",
@@ -86,6 +89,7 @@ export const servicesData: Array<NavItem> = [
     url: "/more",
   },
 ];
+
 export const footerData: Array<NavItem> = [
   {
     name: "about us",
