@@ -18,6 +18,8 @@ import {
 import { imageData } from "@/lib/content/navItems";
 
 const Hero = () => {
+
+  const [modal, setModal] = useState(false);
   return (
     // <Dialog open={modal} onOpenChange={setModal}>
     <div className=" flex flex-col md:flex-row md:justify-center md:items-center md:pt-16 pb-10 lg:pb-20 ">
@@ -34,7 +36,7 @@ const Hero = () => {
         <Carousel className="flex flex-col max-w-md ">
           <CarouselContent className="shadow-lg">
             {imageData.map((img, index) => {
-              const [modal, setModal] = useState(false);
+              // const [modal, setModal] = useState(false);
               return (
                 <Fragment key={index}>
                   <Dialog open={modal} onOpenChange={setModal}>
