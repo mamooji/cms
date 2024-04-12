@@ -12,7 +12,7 @@ const Quote = () => {
       <p className="leading-7 [&:not(:first-child)]:mt-6 font-semibold lg:text-2xl">
         Prophet ﷺ said:
       </p>
-      <blockquote className="mt-6 lg:text-center lg:text-xl border-l-2 pl-6 italic whitespace-pre-wrap">
+      <blockquote className="mt-6 md:text-center lg:text-xl border-l-2 pl-6 italic md:pl-0 whitespace-pre-wrap">
         &quot;Who so ever builds a Masjid for الله سبحانه وتعالى{"\n"} الله
         سبحانه وتعالى{"\n"} will build for him a house in paradise.&quot;
       </blockquote>

@@ -41,7 +41,7 @@ const About = () => {
         <Image
           src="/images/madina.jpg"
           alt="Image"
-          className="rounded-md  object-cover md:col-start-2 md:row-start-1 md:row-end-5 mx-auto"
+          className="rounded-md md:mr-0 object-cover md:col-start-2 md:row-start-1 md:row-end-5 mx-auto"
           width={500}
           height={500}
         />

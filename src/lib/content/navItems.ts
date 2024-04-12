@@ -4,7 +4,7 @@ interface NavItem {
   logo?: SVGAElement;
 }
 
-interface ImageItem {
+export interface ImageItem {
   title: string;
   description: string;
   src: string;
